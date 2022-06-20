@@ -1,46 +1,50 @@
 #output > div {
-    font-family: 'monospace';
-    background-color: #f3f9ff;
-    border: 1px solid lightgray;
-    border-top: 0;
-    font-size: 0.75rem;
-    padding: 0.25rem;
-  }
+  font-family: "monospace";
+  background-color: #f3f9ff;
+  border: 1px solid lightgray;
+  border-top: 0;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+}
 
 #output > div:first-child {
-    border-top: 1px solid lightgray;
-    background-color: #f3f9ff;
+  border-top: 1px solid lightgray;
+  background-color: #f3f9ff;
 }
 
 #output > div:nth-child(even) {
-    background-color: white;
+  background-color: white;
 }
-  
+
 .button_reset {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 40px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 40px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-  
+
 .button_reset:hover {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
 
 #onetimerepl #btnRun {
-    opacity: 100 !important;
-    bottom: -2rem !important;
-    left: 0.25rem !important;
-    width: 30px !important;
-    padding: 2px !important;
-    position: absolute;
+  opacity: 100 !important;
+  bottom: -2rem !important;
+  left: 0.25rem !important;
+  width: 30px !important;
+  padding: 2px !important;
+  position: absolute;
+}
+
+body {
+  background-image: url(../imgs/nyan.gif);
 }
