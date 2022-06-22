@@ -25,6 +25,8 @@ body {
 }
 
 #player {
+  bottom: 2rem !important;
+
   position: absolute;
   padding: 10px;
   cursor: pointer;
