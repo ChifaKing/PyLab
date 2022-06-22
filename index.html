@@ -1,32 +1,56 @@
 <head>
-  <title>猫猫实验室（珊瑚虫版）</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>猫猫实验室(珊瑚虫版)</title>		
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />		
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="index.css" />
 </head>
-<body style="background-image: url(/imgs/nyan.gif);">
-  <div class="app">
-    <h1 style="text-align:center">The Scientific Computing Platform in your Browser</h1>
-    
-    <ul class="hs full">
-      <li class="item" style="background-image: url('imgs/demo6_img.png')"><a href="demo/repl.html">REPL Playground</a></li>
-      <li class="item" style="background-image: url('imgs/demo1_img.png')"><a href="demo/folium.html">Demo: Folium Data</a></li>
-      <li class="item" style="background-image: url('imgs/demo2_img.png')"><a href="demo/factorial.html">Demo: Factorial</a></li>
-      <li class="item" style="background-image: url('imgs/demo3_img.png')"><a href="demo/matplotlib.html">Demo: Plotting with Matplotlib</a></li>
-      <li class="item" style="background-image: url('imgs/demo4_img.png')"><a href="demo/matrix/matrix_creation.html">Demo: Matrix Creation</a></li>
-      <li class="item" style="background-image: url('imgs/demo5_img.png')"><a href="demo/matrix/decomposition.html">Demo: Matrix Decomposition</a></li>
-      <li class="item"><a href="#"></a>More to come soon</a></li>
-    </ul>
-    
-    <div class="container">
-      <div class="item">
-        <p>If you want to join the development of this next-gen all web scientific computing platform, please DM me on Twitter</p>
-      </div>
-    </div>
-    <div class="container" style="text-align:center">
-      <button onclick="window.location.href='https://github.com/bboczeng/PyLab';" style="font-size:24px"><i class="fa fa-github"></i></button>
-      <a href="https://twitter.com/bboczeng?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bboczeng</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+
+<body>
+  <audio
+  id="bgm"
+  src="audio/ylyh.mp3"
+  loop="true"
+  hidden="true"
+></audio>
+<img
+  id="player"
+  src="img/szy.jpeg"
+  alt="album art"
+  class="art"
+/>
+  <div>
+  <h1 class="font-semibold text-2xl ml-5">猫猫实验室(珊瑚虫版) PyLab</h1>
+  <py-repl  id="onetimerepl" output="output", std-err="err-div">
+def factorial(n):
+  if n==0:
+    return 1
+  return n*factorial(n-1)
+print(factorial(8))
+  </py-repl>
+  <div style="justify-content: right;display: flex;align-items: right;">
+    <button class="button_reset" type="button">Clear Output</button>
   </div>
-  
+  <div style="justify-content: center;display: flex;align-items: center;">
+    <pre id="output" style="width: 100%;margin: 2rem;"></pre></div>
+  <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js"></script>
 </body>
