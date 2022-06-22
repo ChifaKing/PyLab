@@ -49,7 +49,7 @@ jstoggle.addEventListener("click", () => {
     running === "paused" ? "running" : "paused";
 
   const audio = document.getElementById("bgm");
-  audio.volume = 0.4;
+  audio.volume = 0.2;
   if (audio.paused) {
     audio.play();
   } else {
