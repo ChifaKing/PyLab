@@ -72,7 +72,7 @@ jstoggle.addEventListener("click", () => {
   if (detectMob()) {
     audio.volume = 0.05;
   } else {
-    audio.volume = 0.4;
+    audio.volume = 0.2;
   }
   if (audio.paused) {
     audio.play();
