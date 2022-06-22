@@ -2,7 +2,7 @@
 A **totally, totally, totally** no-install, no-download, no-config in-browser scientific computing platform based on Python. 
 
 
-# PyLab (Coral version) a improved envirment empowerd by already amazing Pylab.
+# PyLab (Coral version) a improved environment empowered by already amazing Pylab.
 
 
 
