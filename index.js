@@ -70,7 +70,7 @@ jstoggle.addEventListener("click", () => {
   const audio = document.getElementById("bgm");
 
   if (detectMob()) {
-    audio.volume = 0.2;
+    audio.volume = 0.05;
   } else {
     audio.volume = 0.4;
   }
