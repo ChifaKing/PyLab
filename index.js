@@ -68,14 +68,17 @@ jstoggle.addEventListener("click", () => {
     running === "paused" ? "running" : "paused";
 
   const audio = document.getElementById("bgm");
-  audio.volume = 0.4;
+
+  if (detectMob()) {
+    audio.volume = 0.2;
+  } else {
+    audio.volume = 0.4;
+  }
   if (audio.paused) {
     audio.play();
   } else {
     audio.pause();
   }
-
-  console.log(audio.onpause);
 });
 
 $(".button_reset").click(function () {
