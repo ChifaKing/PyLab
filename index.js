@@ -1,22 +1,3 @@
-function detectMob() {
-  const toMatch = [
-    /Android/i,
-    /webOS/i,
-    /iPhone/i,
-    /iPad/i,
-    /iPod/i,
-    /BlackBerry/i,
-    /Windows Phone/i,
-  ];
-
-  return toMatch.some((toMatchItem) => {
-    return navigator.userAgent.match(toMatchItem);
-  });
-}
-if (detectMob()) {
-  console.warn("mobile!!!");
-}
-
 // Make the DIV element draggable:
 dragElement(document.getElementById("player"));
 
@@ -69,11 +50,8 @@ jstoggle.addEventListener("click", () => {
 
   const audio = document.getElementById("bgm");
 
-  if (detectMob()) {
-    audio.volume = 0.05;
-  } else {
-    audio.volume = 0.2;
-  }
+  audio.volume = 0.5;
+
   if (audio.paused) {
     audio.play();
   } else {
